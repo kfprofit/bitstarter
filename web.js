@@ -1,11 +1,11 @@
 var express = require('express');
 var fs = require('fs');
-var buf = requie('buf');
+var buf = require('buf');
 var app = express.createServer(express.logger());
 
 
 app.get('/', function(request, response) {
-buf = fs.readFile('index.html');
+fs.ReadFile('index.html');
 
 response.send(buf.toString());
 });
